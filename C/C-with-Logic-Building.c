@@ -55,3 +55,72 @@ int main()
   return 0;
 }
 // */
+
+// Question 6 ********Assignment-1_Question-6 ***************
+// Write a program to print "Teacher's Day" on the screen. (Remember to print in double and single quotes)
+/*
+#include <stdio.h>
+int main()
+{
+  printf("\"Teacher's Day\"");
+  return 0;
+}
+*/
+
+// Question 7 *******Assignment-1_Question-7 ***************
+// Write a program to calculate sum of two numbers. Numbers are entered by the user
+/*
+#include <stdio.h>
+int main()
+{
+  int a, b, c;
+  scanf("%d %d", &a, &b);
+  c = a + b;
+  printf("%d", c);
+  return 0;
+}
+*/
+
+// Question 8 *******Assignment-1_Question-8 ***************
+// Write a program to calculate square of a given number. Number is entered by the user
+/*
+#include <stdio.h>
+int main()
+{
+  int a, b;
+  scanf("%d", &a);
+  b = a * a;
+  printf("%d", b);
+  return 0;
+}
+*/
+
+// Question 9 *******Assignment-1_Question-9 ***************
+// Write a program to calculate area of a rectangle. Length and breadth are entered by the user
+/*
+#include <stdio.h>
+int main()
+{
+  int l, b;
+  pritf("Enter length and breadth: ");
+  scanf("%d %d", &l, &b);
+  int a = l * b;
+  printf("%d", a);
+  return 0;
+}
+*/
+
+// Question 10 ***************Assignment-1_Question-10 ***************
+// WAP to find the area of a circle. Radius is entered by the user
+/*
+#include <stdio.h>
+int main()
+{
+  float area, radius;
+  float pi = 3.1416;
+  scanf("%f", &radius);
+  area = pi * (radius * radius);
+  printf("%.2f", area);
+  return 0;
+}
+*/
