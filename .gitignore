@@ -1,5 +1,6 @@
 # Ignore VSCode settings
-.vscode/
+.vscode
+.history
 
 # Ignore build outputs
 *.exe
@@ -15,4 +16,3 @@
 # Ignore system files
 .DS_Store
 Thumbs.db
-.history
