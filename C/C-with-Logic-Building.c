@@ -595,3 +595,96 @@ int main(){
   return 0;
 }
 */
+
+// Question 41 ********Assignment-7_Question-4 ***************
+//  Write a program to check whether a given number is an even number or an odd number without using % operator.
+/*
+#include <stdio.h>
+int main(){
+  int a;
+  printf("Enter an integer: ");
+  scanf("%d", &a);
+  if(a / 2.0 == 0){
+    printf("The number %d is even.\n", a);
+  } else{
+    printf("The number %d is odd.\n", a);
+  }
+  return 0;
+}
+*/
+
+// Question 42 ********Assignment-7_Question-5 ***************
+// Write a program to check whether the given number is even or odd using a bitwise operator.
+/*
+#include <stdio.h>
+int main(){
+  int a;
+  printf("Enter an integer: ");
+  scanf("%d", &a);
+  if(a & 1){
+    printf("The number %d is odd.\n", a);
+  } else{
+    printf("The number %d is even.\n", a);
+  }
+}
+*/
+
+// Question 43 ********Assignment-8_Question-1 ***************
+// Write a program to check whether a given number is a three digit number or not.
+/*
+#include <stdio.h>
+int main() {
+    int a, count = 0;
+    printf("Enter an integer: ");
+    scanf("%d", &a);
+    while (a > 0){
+      a = a / 10;
+      count++;
+    }
+    if(count == 3){
+      printf("The number is a three-digit number.\n");
+    } else {
+      printf("The number is not a three-digit number.\n");
+    }
+    return 0;
+}
+*/
+
+// Question 44 ********Assignment-8_Question-2 ***************
+//  Write a program to print greater between two numbers. Print one number if both are the same.
+/*
+#include <stdio.h>
+int main() {
+    int a, b;
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+    if (a > b) {
+        printf("The larger number is %d\n", a);
+    } else if (b > a) {
+        printf("The larger number is %d\n", b);
+    } else {
+        printf("Both numbers are equal.\n");
+    }
+    return 0;
+}
+*/
+
+// Question 45 ********Assignment-8_Question-3 ***************
+//  Write a program to check whether roots of a given quadratic equation are real & distinct, real & equal or imaginary roots
+/*
+#include <stdio.h>
+int main(){
+  int a, b, c;
+  float discriminant;
+  printf("Enter three integers: ");
+  scanf("%d %d %d", &a, &b, &c);
+  discriminant = b * b - 4 * a * c;
+  if (discriminant > 0) {
+    printf("The roots are real and distinct.\n");
+  } else if (discriminant == 0) {
+    printf("The roots are real and equal.\n");
+  } else {
+    printf("The roots are complex.\n");
+  }
+}
+*/
