@@ -359,3 +359,86 @@ int main()
 }
 */
 
+// Question 26 *************Assignment-4_Question-6********
+// Write a program to swap values of two int variables without using third variable and without using +, - operators.
+/*
+#include <stdio.h>
+int main()
+{
+  int a, b;  // 5 3
+  printf("Enter two integers: ");
+  scanf("%d %d", &a, &b);
+  a = a ^ b;
+  b = a ^ b;
+  a = a ^ b;
+  printf("Swap values are %d and %d\n", a, b);
+  return 0;
+}
+*/
+
+// Question 27 ***************Assignment-4_Question-7********
+//  Write a program to swap values of two int variables in single line arithmetic expression.
+/*
+#include <stdio.h>
+int main()
+{
+  int a, b;
+  printf("Enter two integers: ");
+  scanf("%d %d", &a, &b);
+//write a program to swap values of two int variables in single line arithmetic expression
+  a = (a + b) - (b = a);
+  printf("Swap values are %d and %d\n", a, b);
+  return 0;
+}
+*/ 
+
+// Question 28 ***************Assignment-5_Question-1********
+//  Write a program to input a three digit number and display the sum of the digits. 2. Write a program to find ASCII code of the character '+'.
+/*
+#include <stdio.h>
+int main()
+{
+  int a, sum = 0;
+  printf("Enter a three digit number: ");
+  scanf("%d", &a);
+  int original = a;
+  while (a > 0){
+    sum += a%10;
+    a /= 10;
+  }
+  printf("Sum of digits of %d is %d\n", original, sum);
+  return 0;
+}
+*/
+
+
+// Question 29 ***************Assignment-5_Question-2********
+//  Write a program to print size of an int, a float, a char and a double type variable 4. Write a program to make the last digit of a number stored in a variable as zero. (Example - if x=2345 then make it x=2340)
+/*
+#include <stdio.h>
+int main()
+{
+  char a = '+';
+  printf("ASCII value of '%c' is %d\n", a, a);
+  return 0;
+}
+*/
+
+// Question 30 ***************Assignment-5_Question-3********
+//  Write a program to input a number from the user and also input a digit. Append a digit in the number and print the resulting number. (Example - number=234 and digit=9 then the resulting number is 2349)
+/*
+#include <stdio.h>
+int main()
+{
+  int a;
+  float b;
+  char c;
+  double d;
+  printf("Size of int: %zu bytes\n", sizeof(a));
+  printf("Size of float: %zu bytes\n", sizeof(b));
+  printf("Size of char: %zu bytes\n", sizeof(c));
+  printf("Size of double: %zu bytes\n", sizeof(d));
+  return 0;
+}
+*/
+
