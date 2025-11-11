@@ -1021,3 +1021,80 @@ int main() {
     }
 }
 */
+
+// Question 66 ********Assignment-11_Question-10 ***************
+// Write a program to print a table of 5.
+/*
+#include <stdio.h>
+int main() {
+  int n = 10 , i = 1;
+  while(n > 0){
+    printf("%d * %d = %d\n", 5 , i, 5 * i);
+    i++;
+    n--;
+  }
+}
+*/
+
+// Question 67 ********Assignment-12_Question-1 ***************
+// Write a program to print MySirG N times on the screen.
+/*
+#include <stdio.h>
+int main() {
+  int n;
+  printf("Enter how many times you want to print 'MySirG': ");
+  scanf("%d", &n);
+  while(n > 0){
+    printf("MySirG\n");
+    n--;
+    }
+}
+*/
+
+// Question 68 ********Assignment-12_Question-2 ***************
+// Write a program to print the first N natural numbers.
+/*
+#include <stdio.h>
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  int i = 1;
+  while(i <= n){
+    printf("%d\n", i);
+    i++;
+  }
+}
+*/
+   
+// Question 69 ********Assignment-12_Question-3 ***************
+// Write a program to print the first N natural numbers in reverse order
+/*
+#include <stdio.h>
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(n){
+    printf("%d\n", n);
+    n--;
+    }
+    }
+*/
+
+// Question 70 ********Assignment-12_Question-4 ***************
+// Write a program to print the first N odd natural numbers
+/*
+#include <stdio.h>
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  int i = 1;
+  while(n){
+    printf("%d ", i);
+    i += 2;
+    n--;
+  }
+}
+*/
