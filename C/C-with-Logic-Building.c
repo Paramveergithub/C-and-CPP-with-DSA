@@ -786,3 +786,92 @@ int main(){
         }
 }
 */
+
+// Question 51 ********Assignment-9_Question-4 ***************
+// Write a program to check whether a given number is divisible by 3 and divisible by 2. 
+/*
+#include <stdio.h>
+int main(){
+  int num;
+  printf("Enter a number: ");
+  scanf("%d", &num);
+  if(num % 3 == 0 && num % 2 == 0){
+    printf("The number %d is divisible by 3 and 2.\n", num);
+  }else{
+    printf("The number %d is not divisible by 3 and 2.\n", num);
+  }
+}
+*/
+
+// Question 52 ********Assignment-9_Question-5 ***************
+// Write a program to check whether a given number is divisible by 7 or divisible by 3.
+/*
+#include <stdio.h>
+int main(){
+  int num;
+  printf("Enter a number: ");
+  scanf("%d", &num);
+  if(num % 7 == 0){
+    printf("The number %d is divisible by 7.\n", num);
+  }else if(num % 3 == 0){
+    printf("The number %d is divisible by 3.\n", num);
+  }else{
+    printf("The number %d is not divisible by 7 or 3.\n", num);
+  }
+}
+*/
+
+// Question 53 ********Assignment-10_Question-1 ***************
+// Write a program to check whether a given number is positive, negative or zero.
+/*
+#include <stdio.h>
+int main() {
+  int num;
+  printf("Enter a number: ");
+  scanf("%d", &num);
+  if (num > 0) {
+    printf("The number %d is positive.\n", num);
+  } else if (num < 0) {
+    printf("The number %d is negative.\n", num);
+  } else {
+    printf("The number %d is zero.\n", num);
+  }
+  return 0;
+}
+*/
+
+// Question 54 ********Assignment-10_Question-2 ***************
+// Write a program to check whether a given character is an alphabet (uppercase), an alphabet (lower case), a digit or a special character.
+/*
+#include <stdio.h>
+int main() {
+  char ch;
+  printf("Enter a character: ");
+  scanf(" %c", &ch);
+  if(ch >= 'A' && ch <= 'Z') {
+    printf("The character '%c' is uppercase.\n", ch);
+  } else if(ch >= 'a' && ch <= 'z') {
+    printf("The character '%c' is lowercase.\n", ch);
+  } else if(ch >= '0' && ch <= '9') {
+    printf("The character '%c' is a digit.\n", ch);
+  }else {
+    printf("The character '%c' is a special character.\n", ch);
+  }
+}
+*/
+
+// Question 55 ********Assignment-10_Question-3 ***************
+// Write a program which takes the length of the sides of a triangle as an input. Display whether the triangle is valid or not.
+/*
+#include <stdio.h>
+int main() {
+  int a, b, c;
+  printf("Enter the lengths of the three sides of a triangle: ");
+  scanf("%d %d %d", &a, &b, &c);
+  if(a + b > c && a + c > b && b + c > a) {
+    printf("The triangle with sides %d, %d, and %d is valid.\n", a, b, c);
+  } else {
+    printf("The triangle with sides %d, %d, and %d is not valid.\n", a, b, c);
+  }
+}
+*/
