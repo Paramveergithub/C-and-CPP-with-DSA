@@ -948,3 +948,76 @@ int main(){
   }
 }
 */
+
+// Question 61 ********Assignment-11_Question-5 ***************
+// Write a program to print the first 10 odd natural numbers in reverse order.
+/*
+#include <stdio.h>
+int main()
+{
+  int n = 10;
+  int odd = 2*n - 1;
+  while(n > 0){
+    printf("%d ", odd);
+    odd -= 2;
+    n--;
+  }
+}
+*/
+
+// Question 62 ********Assignment-11_Question-6 ***************
+// Write a program to print the first 10 even natural numbers.
+/*
+#include <stdio.h>
+int main(){
+  int n = 10, even = 2;
+  while(n > 0){
+    printf("%d ", even);
+    even += 2;
+    n--;
+  }
+}
+*/
+
+// Question 63 ********Assignment-11_Question-7 ***************
+// Write a program to print the first 10 even natural numbers in reverse order.
+/*
+#include <stdio.h>
+int main() {
+  int n = 10;
+  int even = 2*n;
+  while(n > 0){
+    printf("%d ", even);
+    even -= 2;
+    n--;
+    }
+    }
+    */
+   
+   // Question 64 ********Assignment-11_Question-8 ***************
+   // Write a program to print squares of the first 10 natural numbers.
+   /*
+   #include <stdio.h>
+   int main() {
+    int n = 10 , i = 1;
+    while(n > 0){
+    printf("%d ", i * i);
+    i++;
+    n--;
+  }
+  }
+*/
+
+// Question 65 ********Assignment-11_Question-9 ***************
+// Write a program to print cubes of the first 10 natural numbers.
+/*
+#include <stdio.h>
+int main() {
+  int n = 10 , i = 1;
+  while(n > 0){
+    printf("%d ", i * i * i);
+    i++;
+    n--;
+    }
+}
+*/
