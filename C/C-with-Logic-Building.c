@@ -1258,3 +1258,94 @@ int main(){
 }
 */
 
+
+// Question 81 ********Assignment-13_Question-5 ***************
+// Write a program to calculate sum of cubes of first N natural numbers
+/*
+#include <stdio.h>
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  int sumOfCubesNaturalNumbers = ((n * (n + 1)) / 2) * ((n * (n + 1)) / 2);
+  printf("The sum of cubes of first %d natural numbers is %d\n", n, sumOfCubesNaturalNumbers);
+}
+*/
+
+// Question 82 ********Assignment-14_Question-1 ***************
+// Write a program to calculate factorial of a number.
+/*
+#include <stdio.h>
+int main(){
+  int n, i = 1, fact = 1;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i <= n){
+    fact *= i;
+    i++;
+  }
+  printf("The factorial of %d is %d\n", n, fact);
+}
+*/
+
+// Question 83 ********Assignment-14_Question-2 ***************
+// Write a program to count digits in a given number
+/*
+#include <stdio.h>
+int main(){
+  int n, count = 0;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(n){
+    n /= 10;
+    count++;
+  }
+  printf("Digits in the number: %d\n", count);
+  return 0;
+}
+*/
+
+// Question 84 ********Assignment-14_Question-3 ***************
+// Write a program to check whether a given number is a Prime number or not.
+/*
+#include <stdio.h>
+int main(){
+  int n, i = 1, count = 0;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i <= n){
+    if(n % i == 0){
+      count++;
+    }
+    i++;
+  }
+  if(count == 2){
+    printf("The number %d is prime.\n", n);
+  } else {
+    printf("The number %d is not prime.\n", n);
+  }
+}
+*/
+
+// Question 85 ********Assignment-14_Question-4 ***************
+// Write a program to calculate LCM of two numbers.
+/*
+#include <stdio.h>
+#define min(a, b) ((a) < (b) ? (a) : (b))
+int main(){
+  int a, b, hcf = 0;
+  printf("Enter two numbers: ");
+  scanf("%d %d", &a, &b);
+  int minValue = min(a, b);
+  while(minValue){
+    if(a % minValue == 0 && b % minValue == 0){
+      hcf = minValue;
+      break;
+    }
+    minValue--;
+  }
+  int lcm = (a * b) / hcf;
+  printf("LCM of %d and %d is %d\n", a, b, lcm);
+}
+// */
+
