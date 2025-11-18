@@ -1349,3 +1349,114 @@ int main(){
 }
 // */
 
+// Question 86 ********Assignment-14_Question-5 ***************
+// Write a program to reverse a given number
+/*
+#include <stdio.h>
+int main()
+{
+  int n, NN = 0;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while (n)
+  {
+    int digit = n % 10;
+    NN = NN * 10 + digit;
+    n /= 10;
+  }
+  printf("The reverse of the number is %d\n", NN);
+}
+*/
+
+// Question 87**********Assignment-15_Question-1 ***************
+// Write a program to print all Prime numbers under 100.
+/*
+#include <stdio.h>
+int main(){
+  int n = 100, i = 2;
+  while(i <= n){
+    int j = i, k = 1, count = 0;
+    while(k <= j){
+      if(j % k == 0){
+        count++;
+      }
+      k++;
+    }
+    if(count == 2){
+      printf("%d ", i);
+    }
+    i++;
+  }
+}
+*/
+
+// Question 88**********Assignment-15_Question-2 ***************
+// Write a program to print all Prime numbers between two given numbers.
+/*
+#include <stdio.h>
+int main(){
+  int a, b;
+  printf("Enter two numbers: ");
+  scanf("%d %d", &a, &b);
+  while(a <= b){
+    int j = a, k = 1, count = 0;
+    while(k <= j){
+      if(j % k == 0){
+        count++;
+      }
+      k++;
+    }
+    if(count == 2){
+      printf("%d ", a);
+    }
+    a++;
+  }
+}
+*/
+
+// Question 89**********Assignment-15_Question-3 ***************
+// Write a program to find next Prime number of a given number.
+/*
+#include <stdio.h>
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  n = n+1;
+  while(n){
+    int j = n, k = 1, count = 0;
+    while(k <= j){
+      if(j % k == 0){
+        count++;
+      }
+      k++;
+    }
+    if(count == 2){
+      printf("%d ", n);
+      break;
+    }else{
+      n++;
+    }
+  }
+}
+*/
+
+// Question 90**********Assignment-15_Question-4 ***************
+// Write a program to calculate HCF of two numbers.
+/*
+#include <stdio.h>
+#define min(a, b) ((a) < (b) ? (a) : (b))
+int main(){
+  int a, b;
+  printf("Enter two numbers: ");
+  scanf("%d %d", &a, &b);
+  int minValue = min(a, b);
+  while(minValue){
+    if(a % minValue == 0 && b % minValue == 0){
+      printf("HCF of %d and %d is %d\n", a, b, minValue);
+      break;
+    }
+    minValue--;
+  }
+}
+*/
