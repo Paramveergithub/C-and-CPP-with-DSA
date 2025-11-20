@@ -3093,3 +3093,177 @@ int main(){
 }
 */
 
+// Question 141**********Assignment-23_Question-5 ***************
+// Write a function to print first N prime numbers (TSRN)
+/*
+#include <stdio.h>
+void fPrimeNumber(int n){
+  int i = 1, num = 2;
+  while(i <= n){
+    int k = 2;
+    while(k < num){
+      if(num % k == 0){
+        break;
+      }
+      k++;
+    }
+    if(k == num){
+      printf("%d ", num);
+      i++;
+    }
+    num++;
+  }
+}
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  fPrimeNumber(n);
+}
+// */
+
+
+// Question 142**********Assignment-24_Question-1 ***************
+// Write a function to print all Prime numbers between two given numbers. (TSRN) 
+/*
+#include <stdio.h>
+void allPrimeNum(int a, int b){
+  while(a <=b){
+    int i = 2;
+    if(a < 2){
+      a++;
+      continue;
+    }
+    while(i < a){
+      if(a % i == 0){
+        break;
+      }
+      i++;
+    }
+    if(i == a){
+      printf("%d ", a);
+    }
+    a++;
+  }
+}
+int main(){
+  int a, b;
+  printf("Enter two numbers: ");
+  scanf("%d %d", &a, &b);
+  allPrimeNum(a, b);
+  return 0;
+}
+*/
+
+
+// Question 143**********Assignment-24_Question-2 ***************
+// Write a function to print first N terms of Fibonacci series (TSRN)
+/*
+#include <stdio.h>
+void fibo(int n){
+  int prev = 0, curr = 1;
+  if(n < 1){
+    printf("Invalid input.\n");
+    return;
+  }
+  int i = 1;
+  while(i <= n){
+    if(i == 1){
+      printf("%d ", prev);
+      i++;
+    }else if(i == 2){
+      printf("%d ", curr);
+      i++;
+    }else{
+      int next = prev + curr;
+      printf("%d ", next);
+      prev = curr;
+      curr = next;
+      i++;
+    }
+  }
+}
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  fibo(n);
+  return 0;
+}
+*/
+
+
+// Question 144**********Assignment-24_Question-3 ***************
+// 3. Write a function to print PASCAL Triangle. (TSRN)
+/*
+#include <stdio.h>
+int factorial(int n){
+  int fact = 1;
+  for(int i = 1; i <= n; i++){
+    fact *= i;
+  }
+  return fact;
+}
+void printPascalTriangle(int n){
+  for(int i = 0; i < n; i++){
+   for(int j = 1; j < n-i; j++){
+     printf(" ");
+   }
+   for(int j = 0; j <=i; j++){
+      printf("%d ", factorial(i) / (factorial(j) * factorial(i - j)));
+   }
+    printf("\n");
+  }
+}
+int main(){
+  int n;
+  printf("Enter the number of rows for Pascal's Triangle: ");
+  scanf("%d", &n);
+  printPascalTriangle(n);
+  return 0;
+}
+*/
+
+
+// Question 145**********Assignment-24_Question-4 ***************
+// Write a function to print all Armstrong numbers between two given numbers. (TSRN)
+/*
+#include <stdio.h>
+void allarmstrongNumbers(int a, int b){
+  while(a <= b){
+    int temp = a, countD = 0;
+    // Count the number of digits in the number
+    while(temp){
+      countD++;
+      temp /= 10;
+    }
+    int arm = 0;
+    temp = a;
+    // Calculate the Armstrong number
+    while(temp){
+      int rem = temp % 10;
+      int digit = 1, pow = countD;
+      // Calculate the power of the digit
+      while(pow){
+        digit *= rem;
+        pow--;
+      }
+      arm += digit;
+      temp /= 10;
+    }
+    // Check if the number is an Armstrong number
+    if(arm == a){
+      printf("%d ", a);
+    }
+    a++;
+  }
+}
+int main(){
+  int a, b;
+  printf("Enter two numbers: ");
+  scanf("%d %d", &a, &b);
+  allarmstrongNumbers(a, b);
+  return 0;
+}
+*/
+
