@@ -1729,3 +1729,132 @@ int main() {
 }
 */
 
+// Question 101**********Assignment-17_Question-05 ***************
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+/*
+#include <stdio.h>
+int main() {
+  int n, i = 1;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i <= n){
+    int j = 1;
+    while(j <= i){
+      printf("%d ", j);
+      j++;
+    }
+    printf("\n");
+    i++;
+  }
+}
+*/
+
+// Question 102**********Assignment-17_Question-06 ***************
+// 1
+// 2 1
+// 3 2 1
+// 4 3 2 1
+// 5 4 3 2 1
+/*
+#include <stdio.h>
+int main() {
+  int n, i = 1;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i <= n){
+    int j = i;
+    while(j){
+      printf("%d ", j);
+      j--;
+    }
+    printf("\n");
+    i++;
+  }
+}
+*/
+
+// Question 103**********Assignment-17_Question-07 **************
+// A B C D E
+//   A B C D
+//     A B C
+//       A B
+//         A
+/*
+#include <stdio.h>
+int main() {
+  int n, i = 1;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i <= n){
+    int j = 0;
+    while( j < i){
+      printf("  ");
+      j++;
+    }
+    j = 0;
+    while(j < n-i+1){
+      printf("%c ", 'A' + j);
+      j++;
+    }
+    printf("\n");
+    i++;
+  }
+}
+*/
+
+// Question 104**********Assignment-17_Question-08 ***************
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+/*
+#include <stdio.h>
+int main() {
+ int n, i = 1, k = 1;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i <= n){
+    int j = 1;
+    while(j <= i){
+      printf("%d ", k);
+      j++, k++;
+    }
+    printf("\n");
+    i++;
+  }
+}
+*/
+
+// Question 105**********Assignment-17_Question-09 ***************
+// A B C D E
+//   B C D E
+//     C D E
+//       D E
+//         E
+/*
+#include <stdio.h>
+int main() {
+  int n, i = 1;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i <= n){
+    int j = 0;
+    while( j < i){
+      printf("  ");
+      j++;
+    }
+    char ch = 'A';
+    while(ch - 'A' + i <= n){
+      printf("%c ", ch + (i - 1));
+      ch++;
+    }
+    printf("\n");
+    i++;
+  }
+}
+*/
+
