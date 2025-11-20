@@ -2460,3 +2460,213 @@ int main() {
 */
 
 
+// Question 121**********Assignment-19_Question-5 ***************
+// Convert the following if-else-if construct into switch case:
+// if(var == 1)
+//   printf("good");
+// else if(var == 2)
+//   printf("better");
+// else if(var == 3)
+//   printf("best");
+// else
+//   printf("invalid");
+/*
+#include <stdio.h>
+int main() {
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  switch(n){
+    case 1: {
+      printf("Good");
+      break;
+    }
+    case 2: {
+      printf("Better");
+      break;
+    }
+    case 3: {
+      printf("Best");
+      break;
+    }
+    default: {
+      printf("Invalid number");
+      break;
+    }
+  }
+}
+*/
+
+
+// Question 122**********Assignment-20_Question-1 ***************
+// Write a program to find and display grade obtained by a student in a test. Grading specifications are as follows:
+//    - Marks from 90 to 100: Grade A
+//    - Marks from 80 to less than 90: Grade B
+//   - Marks from 70 to less than 80: Grade C 
+//   - Marks from 60 to less than 70: Grade D
+//   - Marks from 50 to less than 60: Grade E
+//    - Marks below 50: Grade F
+//    - Marks greater than 100 or less than 0 : Invalid Marks
+/*
+#include <stdio.h>
+int main() {
+  int n;
+  printf("Enter the mark of the student: ");
+  scanf("%d", &n);
+  switch(n){
+    case 90 ... 100:
+      printf("Grade A\n");
+      break;
+    case 80 ... 89:
+      printf("Grade B\n");
+      break;
+    case 70 ... 79:
+      printf("Grade C\n");
+      break;
+    case 60 ... 69:
+      printf("Grade D\n");
+      break;
+    case 50 ... 59:
+      printf("Grade E\n");
+      break;
+    case 1 ... 49:
+      printf("Grade F\n");
+      break;
+    default:
+      printf("Invalid mark\n");
+      break;
+  }
+}
+*/
+
+
+// Question 123**********Assignment-20_Question-2 ***************
+// Write a menu driven program with the following options:
+// 1. Factorial of a number
+// 2. Check Even and Odd
+// 3. Area of circle
+// 4. Sum of first N natural numbers
+// 5. Exit
+/*
+#include <stdio.h>
+int main() {
+   while(1){
+    printf("1. Factorial of a number\n");
+    printf("2. Check Even or Odd\n");
+    printf("3. Area of a Circle\n");
+    printf("4. Sum of first N natural numbers\n");
+    printf("5. Exit\n");
+    int choice;
+    printf("Enter your choice (1-5): ");
+    scanf("%d", &choice);
+    switch (choice) {
+      case 1: {
+        int n, i = 1, fact = 1;
+        printf("Enter a number: ");
+        scanf("%d", &n);
+        while(i <= n){
+          fact *= i;
+          i++;
+        }
+        printf("The factorial of %d is %d\n", n, fact);
+        break;
+      }
+      case 2: {
+        int n;
+        printf("Enter a number: ");
+        scanf("%d", &n);
+        if (n % 2 == 0) {
+          printf("The number %d is even.\n", n);
+        } else {
+          printf("The number %d is odd.\n", n);
+        }
+        break;
+      }
+      case 3: {
+        float radius, area;
+        printf("Enter the radius of the circle: ");
+        scanf("%f", &radius);
+        area = 3.14 * radius * radius;
+        printf("The area of the circle is %.2f\n", area);
+        break;
+      }
+      case 4: {
+        int n, sum = 0;
+        printf("Enter a number: ");
+        scanf("%d", &n);
+        for (int i = 1; i <= n; i++) {
+          sum += i;
+        }
+        printf("The sum of the first %d natural numbers is %d\n", n, sum);
+        break;
+      }
+      case 5: {
+        printf("Exiting the program.\n");
+        return 0;
+      }
+      default: {
+        printf("Invalid choice.\n");
+        break;
+      }
+    }
+  }
+}
+*/
+
+
+// Question 124**********Assignment-20_Question-3 ***************
+// Write a program to check whether a given character is uppercase alphabet or lower case alphabet or some other special character, using switch case statement.
+/*
+#include <stdio.h>
+int main() {
+  char ch;
+  printf("Enter a character: ");
+  scanf(" %c", &ch);
+  switch(ch){
+    case 'A' ... 'Z':
+      printf("The character %c is an uppercase letter.\n", ch);
+      break;
+    case 'a' ... 'z':
+      printf("The character %c is a lowercase letter.\n", ch);
+      break;
+    case '0' ... '9':
+      printf("The character %c is a digit.\n", ch);
+      break;
+    default:
+      printf("The character %c is a special character.\n", ch);
+      break;
+  }
+}
+*/
+
+
+
+// Question 125**********Assignment-20_Question-4 ***************
+// Write a program to check whether a given character is vowel or consonant or some other special character, using switch case statement.
+/*
+#include <stdio.h>
+int main(){
+  char ch;
+  printf("Enter a character: ");
+  scanf(" %c", &ch);
+  switch(ch){
+    case 'A': case 'E': case 'I': case 'O': case 'U': case 'a': case 'e': case 'i': case 'o': case 'u':
+    {
+      printf("The character %c is a vowel.\n", ch);
+      break;
+    }
+    case 'B': case 'C': case 'D': case 'F': case 'G': case 'H': case 'J': case 'K': case 'L': case 'M': case 'N': case 'P': case 'Q': case 'R': case 'S': case 'T': case 'V': case 'W': case 'X': case 'Y': case 'Z':
+    case 'b': case 'c': case 'd': case 'f': case 'g': case 'h': case 'j': case 'k': case 'l': case 'm': case 'n': case 'p': case 'q': case 'r': case 's': case 't': case 'v': case 'w': case 'x': case 'y': case 'z':
+    {
+      printf("The character %c is a consonant.\n", ch);
+      break;
+    }
+    default:{
+      printf("The character is not an alphabet.\n");
+      break;
+    }
+  }
+}
+*/
+
+
