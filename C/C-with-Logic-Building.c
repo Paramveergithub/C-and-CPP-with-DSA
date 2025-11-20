@@ -3267,3 +3267,116 @@ int main(){
 }
 */
 
+// Question 146**********Assignment-24_Question-5 ***************
+// Write a function to find the sum of first N terms of the series 1!/1+2/2+31/3+4!/4+5!/ 5... nl/n (TSRS)
+/*
+#include <stdio.h>
+int factorial(int n){
+  int fact = 1;
+  for(int i = 2; i <= n; i++){
+    fact *= i;
+  }
+  return fact;
+}
+int sOffNterms(int n){
+  int i = 0, sum = 0;
+  while(i < n){
+    sum += factorial(i);
+    i++;
+  }
+  return sum;
+}
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  printf("Sum of first %d terms of the series 1!/1 + 2!/2 + 3!/3 + ... + n!/n is: %d", n, sOffNterms(n));
+}
+*/
+
+// Question 147**********Assignment-25_Question-1 ***************
+//  Write a recursive function to print first N natural numbers
+/*
+#include <stdio.h>
+void pNnatural(int n){
+  if(n == 1){
+    printf("%d ", n);
+    return;
+  }
+  pNnatural(n - 1);
+  printf("%d ", n);
+  return;
+}
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  pNnatural(n);
+  return 0;
+}
+// */
+
+// Question 148**********Assignment-25_Question-2 ***************
+// Write a recursive function to print first N natural numbers in reverse order
+/*
+#include <stdio.h>
+void nNreverse(int n){
+  printf("%d ", n);
+  if(n == 1){
+    return;
+  }
+  nNreverse(n - 1);
+  return;
+}
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  nNreverse(n);
+  return 0;
+}
+*/
+
+// Question 149**********Assignment-25_Question-3 ***************
+// Write a recursive function to print first N odd natural numbers
+/*
+#include <stdio.h>
+void pNoddN(int n, int odd){
+  printf("%d ", odd);
+  if(n == 1){
+    return;
+  }
+  odd += 2;
+  pNoddN(n-1, odd);
+  return;
+}
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  pNoddN(n, 1);
+  return 0;
+}
+*/
+
+// Question 150**********Assignment-25_Question-4 ***************
+// Write a recursive function to print first N odd natural numbers in reverse order
+/*
+#include <stdio.h>
+void pNoddreverse(int n){
+  printf("%d ", n*2 - 1);
+  if(n == 1){
+    return;
+  }
+  pNoddreverse(n - 1);
+  return;
+}
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  pNoddreverse(n);
+  return 0;
+}
+*/
+
