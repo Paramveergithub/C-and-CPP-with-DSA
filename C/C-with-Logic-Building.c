@@ -1588,3 +1588,144 @@ int main(){
 }
 */
 
+
+// Question 96**********Assignment-16_Question-5 ***************
+// Write a program to print all Armstrong numbers under 1000.
+/*
+#include <stdio.h>
+int main(){
+  int n;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  int i = 1;
+  while(i <= n){
+    int armstrong = 0, NN = i, p = 0;
+    while(NN){
+      NN /= 10;
+      p++;
+    }
+    NN = i;
+    while(NN){
+      int rem = NN % 10;
+      int R = rem;
+      int j = 1;
+      while(j < p){
+        R = R * rem;
+        j++;
+      }
+      armstrong = armstrong + R;
+      NN = NN / 10;
+    }
+    if(armstrong == i){
+      printf("%d ", i);
+    }
+    i++;
+  }
+}
+*/
+
+// Question 97**********Assignment-17_Question-01 ***************
+// *
+// * *
+// * * *
+// * * * *
+/*
+#include <stdio.h>
+int main() {
+  int n, i = 1;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i <= n){
+    int j = 1;
+    while(j <= i){
+      printf("* ");
+      j++;
+    }
+    printf("\n");
+    i++;
+  }
+}
+*/
+
+// Question 98**********Assignment-17_Question-02 ***************
+//           *
+//         * *
+//       * * *
+//     * * * *
+//   * * * * *
+/*
+#include <stdio.h>
+int main() {
+  int n, i = 1;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i <= n){
+    int j = 1;
+    while( j <= n - i){
+      printf("  ");
+      j++;
+    }
+    j = 1;
+    while(j <= i){
+      printf("* ");
+      j++;
+    }
+    printf("\n");
+    i++;
+  }
+}
+*/
+
+// Question 99**********Assignment-17_Question-03 ***************
+//  * * * * *
+//  * * * *
+//  * * *
+//  * *
+//  *
+/*
+#include <stdio.h>
+int main() {
+  int n, i = 0;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i < n){
+    int j = 1;
+    while( j <= n - i){
+      printf("* ");
+      j++;
+    }
+    printf("\n");
+    i++;
+  }
+}
+*/
+
+// Question 100**********Assignment-17_Question-04 ***************
+//        * * * * *
+//          * * * *
+//            * * *
+//              * *
+//                *
+/*
+#include <stdio.h>
+int main() {
+  int n, i = 0;
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  while(i < n){
+    int j = 0;
+    while( j < i){
+      printf("  ");
+      j++;
+    }
+    j = 0;
+    while(j < n - i){
+      printf("* ");
+      j++;
+    }
+    printf("\n");
+    i++;
+  }
+}
+*/
+
